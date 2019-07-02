@@ -1,0 +1,11 @@
+syntax = "proto3";
+package external_models;
+
+message ExternalLine {
+	string objectid = 1;
+	string name     = 2;
+}
+
+message ExternalLines {
+	repeated ExternalLine lines = 1;
+}

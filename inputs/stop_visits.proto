@@ -1,0 +1,25 @@
+syntax = "proto3";
+package external_models;
+
+import "google/protobuf/timestamp.proto";
+
+message ExternalStopVisit {
+	string objectid          = 1;
+	string stopAreaRef       = 2;
+	string passageOrder      = 3;
+	string vehicleJourneyRef = 4;
+	bool monitored           = 5;
+
+	message Times {
+		google.protobuf.Timestamp aimed = 1;
+		google.protobuf.Timestamp expected = 2;
+		google.protobuf.Timestamp actual = 3;
+	}
+
+	Times arrival_times   = 6;
+	Times departure_times = 7;
+}
+
+message ExternalStopVisits {
+	repeated ExternalStopVisit stop_visits = 1;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+package external_models;
+
+message ExternalVehicleJourney {
+	string objectid        = 1;
+	string lineRef         = 2;
+	string originRef       = 3;
+	string originName      = 4;
+	string destinationRef  = 5;
+	string destinationName = 6;
+	string direction       = 7;
+	string viaName         = 8;
+	int32 advance          = 9;
+	int32 delay            = 10;
+}
+
+message ExternalVehicleJourneys {
+	repeated ExternalVehicleJourney vehicle_journeys = 1;
+}

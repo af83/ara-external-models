@@ -1,0 +1,13 @@
+syntax = "proto3";
+package external_models;
+
+message ExternalStopArea {
+	string objectid  = 1;
+	string name      = 2;
+	int32 position_x = 3;
+	int32 position_y = 4;
+}
+
+message ExternalStopAreas {
+	repeated ExternalStopArea stop_areas = 1;
+}
