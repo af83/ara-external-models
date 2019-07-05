@@ -10,8 +10,6 @@ message ExternalVehicleJourney {
 	string destinationName = 6;
 	string direction       = 7;
 	string viaName         = 8;
-	int32 advance          = 9;
-	int32 delay            = 10;
 }
 
 message ExternalVehicleJourneys {
