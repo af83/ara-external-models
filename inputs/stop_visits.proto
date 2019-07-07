@@ -19,7 +19,3 @@ message ExternalStopVisit {
 	Times arrival_times   = 6;
 	Times departure_times = 7;
 }
-
-message ExternalStopVisits {
-	repeated ExternalStopVisit stop_visits = 1;
-}

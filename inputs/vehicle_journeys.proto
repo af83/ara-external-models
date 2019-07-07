@@ -11,7 +11,3 @@ message ExternalVehicleJourney {
 	string direction       = 7;
 	string viaName         = 8;
 }
-
-message ExternalVehicleJourneys {
-	repeated ExternalVehicleJourney vehicle_journeys = 1;
-}

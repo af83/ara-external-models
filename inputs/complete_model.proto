@@ -1,0 +1,14 @@
+syntax = "proto3";
+package external_models;
+
+import "stop_areas.proto";
+import "lines.proto";
+import "vehicle_journeys.proto";
+import "stop_visits.proto";
+
+message ExternalCompleteModel {
+	repeated ExternalStopArea stop_areas = 1;
+	repeated ExternalLine lines = 2;
+	repeated ExternalVehicleJourney vehicle_journeys = 3;
+	repeated ExternalStopVisit stop_visits = 4;
+}

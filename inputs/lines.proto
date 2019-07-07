@@ -5,7 +5,3 @@ message ExternalLine {
 	string objectid = 1;
 	string name     = 2;
 }
-
-message ExternalLines {
-	repeated ExternalLine lines = 1;
-}

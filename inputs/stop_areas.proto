@@ -7,7 +7,3 @@ message ExternalStopArea {
 	double position_x = 3;
 	double position_y = 4;
 }
-
-message ExternalStopAreas {
-	repeated ExternalStopArea stop_areas = 1;
-}
