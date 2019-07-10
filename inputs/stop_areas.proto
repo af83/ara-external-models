@@ -4,6 +4,6 @@ package external_models;
 message ExternalStopArea {
 	string objectid  = 1;
 	string name      = 2;
-	double position_x = 3;
-	double position_y = 4;
+	double longitude = 3;
+	double latitude  = 4;
 }
